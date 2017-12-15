@@ -23,6 +23,12 @@
 .settings
 .tmproj
 Thumbs.db
+.vscode
+.eslintrc
+.stylelintrc
+gulpfile.js
+package-lock.json
+package.json
 
 # Folders to ignore
 .CVS
@@ -32,7 +38,9 @@ Thumbs.db
 .svn
 bower_components
 dist
-build
+gulp
+source
+
 
 
 # Node.JS
