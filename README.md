@@ -1,9 +1,9 @@
-﻿### Сайт-портфолио с курса "Веб для начинающих"
-#### Школа 'Lofschool', 10/2017
+﻿### Стартовый репозиторий
+#### Школа 'Lofschool', 2017
 **Студент:** Тимур Адольшин.
 **Наставник:** Юрий Кучма.
 
-**Демо**: https://adolshin.github.io/start-repo/
+**Демо**: https://adolshin.github.io/start-repo/build
 
 Stack:
  - Gulp 4.0
