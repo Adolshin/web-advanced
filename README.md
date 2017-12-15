@@ -3,7 +3,7 @@
 **Студент:** Тимур Адольшин.
 **Наставник:** Юрий Кучма.
 
-**Демо**: https://adolshin.github.io/start/
+**Демо**: https://adolshin.github.io/start-repo/
 
 Stack:
  - Gulp 4.0
