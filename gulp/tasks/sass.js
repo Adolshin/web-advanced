@@ -1,8 +1,9 @@
 'use strict';
-
+const sassGlob = require('gulp-sass-glob');
 module.exports = function() {
   $.gulp.task('sass', function() {
-    return $.gulp.src('./source/style/app.scss')
+    return $.gulp.src('./source/style/main.scss')
+      .pipe(sassGlob())
       .pipe($.gp.if($.dev, $.gp.sourcemaps.init()))
       .pipe($.gp.sass()).on('error', $.gp.notify.onError({ title: 'Style' }))
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))

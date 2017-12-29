@@ -1,0 +1,41 @@
+extends ../_templatepages
+
+block variables
+  - var title = 'Мои работы'
+  - var navactive = 1  
+block user
+  +user('about')
+  svg.hero__title
+    use(xlink:href="./assets/img/sprite.svg#portfolio_header")  
+
+block hero  
+  +triangles('beigelight', 'beigelight') 
+  .hero__arrow
+    +arrow('hero','#anchor')       
+
+block content
+  section.section.works
+    .works__title
+      +title('works', 'works_header', 'Мои работы')
+    .works__content#anchor
+      include ../blocks/slider
+  section.section.reviews
+    .reviews__back
+      img.reviews__img(src="./assets/img/reviews-bg.png")
+    .reviews__title
+      +title('reviews','about_header','Что обо мне', 'Говорят')
+    .reviews__rumors
+      include ../blocks/rumors
+    .reviews__form
+      .reviews__blur
+      .reviews__form-title
+        +subtitle('reviews','Связаться со мной')
+      include ../blocks/reviews-form
+    .reviews__arrow
+      +arrow('reviews','#anchordown')
+block js
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+  script(src="./assets/js/works.js")
+      
+    
+   

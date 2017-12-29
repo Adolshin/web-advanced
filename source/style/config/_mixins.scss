@@ -34,6 +34,12 @@
     border-left: $width solid $color;
   }
 }
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
 
 %clearfix {
   &:before,
@@ -53,6 +59,12 @@
 //responsive
 @function rem($px) {
   @return $px / 16px+0rem;
+}
+
+@mixin big {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
 }
 
 @mixin desktop {
@@ -77,4 +89,59 @@
   @media screen and (max-width: 480px) {
     @content;
   }
+}
+
+@mixin roboto {
+  font-family: 'roboto';
+}
+
+@mixin roboto-bold {
+  font-family: 'roboto-bold';
+}
+
+@mixin roboto-bolditalic {
+  font-family: 'roboto-bolditalic';
+}
+
+@mixin roboto-italic {
+  font-family: 'roboto-italic';
+}
+
+@mixin roboto-light {
+  font-family: 'roboto-light';
+}
+
+@mixin roboto-lightitalic {
+  font-family: 'roboto-lightitalic';
+}
+
+@mixin roboto-medium {
+  font-family: 'roboto-medium';
+}
+
+@mixin roboto-mediumitalic {
+  font-family: 'roboto-mediumitalic';
+}
+
+@mixin roboto-regular {
+  font-family: 'roboto-regular';
+}
+
+@mixin fontawesomeregular {
+  font-family: 'fontawesomeregular';
+}
+
+@mixin bernier_regularregular {
+  font-family: 'bernier_regularregular';
+}
+
+@mixin bernier_shaderegular {
+  font-family: 'bernier_shaderegular';
+}
+
+@mixin bernier_distressedregular {
+  font-family: 'bernier_distressedregular';
+}
+@mixin fontawesome {
+  font-family: 'fontawesomeregular';
 }

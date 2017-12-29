@@ -13,12 +13,13 @@ global.$ = {
     app: require('./gulp/paths/app.js')
   },
   gulp: require('gulp'),
-  del: require('del'),
+  del: require('del'), 
   merge: require('merge-stream'),
   browserify : require('browserify'),
   source : require('vinyl-source-stream'),
   buffer : require('vinyl-buffer'),
   babel : require('babelify'),
+  sassGlob : require('gulp-sass-glob'),
   browserSync: require('browser-sync').create(),
   fs : require('fs'),
   gp: require('gulp-load-plugins')({
@@ -37,8 +38,9 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
+    'copy:js',
     'js:foundation',
-    'js:process',
+    'js:process',    
     'copy:image',
     'copy:font',
     'css:foundation'
@@ -54,8 +56,9 @@ $.gulp.task('build', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
+    'copy:js',
     'js:foundation',
-    'js:process',
+    'js:process',    
     'copy:image',
     'copy:font',
     'css:foundation'

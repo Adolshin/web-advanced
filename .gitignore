@@ -38,9 +38,7 @@ package.json
 .svn
 bower_components
 dist
-gulp
-source
-
+build
 
 
 # Node.JS
