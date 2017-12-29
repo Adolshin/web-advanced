@@ -6,7 +6,7 @@ module.exports = function() {
     patterns.push({ match: '%=suffix=%', replace: $.dev ? '' : '.min' });
     patterns.push({ match: '%=version=%', replace: $.dev ? '' : `?rel=${$.package.version}` });//Math.ceil(Math.random()*100000)
 
-    return $.gulp.src('./source/template/pages/*.pug')
+    return $.gulp.src('./source/pug/pages/*.pug')
       .pipe($.gp.pug({ pretty: true }))
       .on('error', $.gp.notify.onError(function(error) {
         return {

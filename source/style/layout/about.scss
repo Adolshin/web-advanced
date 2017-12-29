@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+}
+
+.about__left {
+    padding-bottom: 40px;
+    background-color: $beigelight;  
+    width: 50%;
+    display: flex;
+    align-items: flex-start;   
+    justify-content: space-around; 
+    @include big {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+    }
+}
+.about__left-column {
+    display: flex;
+    justify-content: center;    
+    width: 45%;
+    @include big {
+        width: 90%;
+        margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about__right {
+    padding-bottom: 40px;
+    @include center;
+    align-items: flex-start;
+    background-color: $beige;
+    // padding: 0 20px;
+    width: 50%;
+}
+.about__skills {
+    width: 90%;
+}

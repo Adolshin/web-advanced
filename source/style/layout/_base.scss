@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+label {
+  display: block;
+}
+textarea {
+  display: block;
+  overflow: hidden;
+  outline: none;
+  -moz-appearance: none;
+  resize: none;
+}
+::-webkit-input-placeholder {
+  color: $greydark;
+  opacity: .5;
+}
+
+::-moz-placeholder {
+  color: $greydark;
+  opacity: .5;
+}
+
+:-ms-input-placeholder {
+  color: $greydark;
+  opacity: .5;
+}
+
+svg,
+a {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bx-wrapper {
+  margin-bottom: 0;
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
+.bx-viewport {
+  height: auto !important;
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,16 @@
+.triangles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; // height: 100%;
+  &.triangles_color_beige {
+    fill: $beige;
+  }
+  &.triangles_color_beigelight {
+    fill: $beigelight;
+  }
+  &.triangles_color_white {
+    fill:#fff;
+  }
+}

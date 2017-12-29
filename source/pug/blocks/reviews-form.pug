@@ -1,0 +1,13 @@
+form.reviews-form(action="")
+    .reviews-form__container
+        .reviews-form__fields
+            each item in ['Имя','Email']
+                label.reviews-form__label
+                    input.reviews-form__input(type="text" placeholder=`${item}`)
+        textarea.reviews-form__textarea(placeholder='Ваше сообщение')
+        .reviews-form__buttons
+            .buttons.buttons_reviews
+                ul.buttons__list
+                    each item in [['Отправить','send'],['Очистить','clear']]
+                        li.buttons__item
+                            a.buttons__link(href="#" id=`${item[1]}`) #{item[0]}    

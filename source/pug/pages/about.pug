@@ -1,0 +1,41 @@
+extends ../_templatepages
+
+block variables
+  - var title = 'Обо мне'
+  - var navactive = 0  
+
+block scripts
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA70UaGPCscyiYmkvLFzY-fiUR939culFI")
+
+block user
+  +user('about')
+  svg.hero__title
+    use(xlink:href="./assets/img/sprite.svg#portfolio_header")  
+
+block hero  
+  +triangles('beigelight', 'beige') 
+  .hero__arrow
+    +arrow('hero','#anchor')       
+
+block content
+  section.section.about#anchor   
+    .about__left  
+      .about__left-column
+        .about__title
+          +title('about', 'about_header', 'Обо мне') 
+      .about__left-column
+        include ../blocks/user-about      
+    .about__right
+      .about__skills
+        include ../blocks/skills 
+  section.section.map
+    .map__map#map
+    .map__contacts
+      include ../blocks/contacts
+//- block footer
+//-   - var navactive = 0  
+//-   include ../common/footer  
+block js
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+  script(src="./assets/js/about.js")
+

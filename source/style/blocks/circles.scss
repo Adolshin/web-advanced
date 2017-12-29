@@ -1,0 +1,79 @@
+.circles {
+    fill: none;
+    stroke-width: 20;
+    width: 120px;
+    height: 120px;
+  }
+  .circle__first {
+    stroke: #dfdcd5;
+  }
+  .circle__second {
+    stroke: $greenlight;
+    stroke-dasharray: .001 282.6;
+    transition: stroke-dasharray 1s;
+  }
+
+  
+  .circle__second_0 {
+     stroke-dasharray: 0 282.6;
+  }
+  .circle__second_5 {
+    stroke-dasharray: 14.13 282.6;
+ }
+  .circle__second_10 {
+     stroke-dasharray: 28.26 282.6;
+  }
+  .circle__second_15 {
+     stroke-dasharray: 42.39 282.6;
+  }
+  .circle__second_20 {
+     stroke-dasharray: 56.52 282.6;
+  }
+  .circle__second_25 {
+     stroke-dasharray: 70.65 282.6;
+  }
+  .circle__second_30 {
+     stroke-dasharray: 84.78 282.6;
+  }
+  .circle__second_35 {
+     stroke-dasharray: 98.91 282.6;
+  }
+  .circle__second_40 {
+     stroke-dasharray: 113.04 282.6;
+  }
+  .circle__second_45 {
+     stroke-dasharray: 127.17 282.6;
+  }
+  .circle__second_50 {
+     stroke-dasharray: 141.3 282.6;
+  }
+  .circle__second_55 {
+     stroke-dasharray: 155.43 282.6;
+  }
+  .circle__second_60 {
+     stroke-dasharray: 169.56 282.6;
+  }
+  .circle__second_65 {
+     stroke-dasharray: 183.69 282.6;
+  }
+  .circle__second_70 {
+     stroke-dasharray: 197.82 282.6;
+  }
+  .circle__second_75 {
+     stroke-dasharray: 211.95 282.6;
+  }
+  .circle__second_80 {
+     stroke-dasharray: 226.08 282.6;
+  }
+  .circle__second_85 {
+     stroke-dasharray: 240.21 282.6;
+  }
+  .circle__second_90 {
+     stroke-dasharray: 254.34 282.6;
+  }
+  .circle__second_95 {
+     stroke-dasharray: 268.47 282.6;
+  }
+  .circle__seconds_100 {
+     stroke-dasharray: 282.6 282.6;
+  }

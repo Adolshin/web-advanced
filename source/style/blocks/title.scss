@@ -1,0 +1,76 @@
+.title {
+    position: relative;
+    @include bernier_regularregular;
+    font-size: 63px;
+    flex-direction: column;
+    color: $greydark;
+    @include center;
+    &:hover {
+        .title__text:after,
+        .title__text:before {
+            opacity: 1;
+        }
+        .title__img {
+            fill: rgba(22, 194, 170, .1);
+        }
+    }
+    &.title_about {
+        .title__img {
+            width: 355px;
+            height: 120px;
+        }
+    }
+    &.title_works {
+        .title__img {
+            width: 500px;
+            height: 150px;
+        }
+    }
+    &.title_reviews {
+        .title__img {
+            width: 500px;
+            height: 170px;
+        }
+    }
+    &.title_blog {
+        .title__img {
+            width: 300px;
+            height: 200px;
+            fill: rgba(255, 255, 255, .07);
+            top:-40px;
+        }
+        .title__text {
+            color:#fff;
+        }
+    }
+}
+
+.title__img {
+    fill: rgba(109, 112, 112, .07);
+    position: absolute;
+    transition: .3s;
+}
+
+.title__text {
+    white-space: nowrap;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    &:after {
+        display: block;
+        content: "-";
+        opacity: .2;
+        margin-left: 15px;
+        transition: .3s;
+    }
+    &:before {
+        display: block;
+        content: "-";
+        opacity: .2;
+        margin-right: 15px;
+        transition: .3s;
+    }
+}
