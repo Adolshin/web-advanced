@@ -1,0 +1,10 @@
+$('.index__authorization').click(function(e){
+    e.preventDefault();
+    $(this).addClass('visuallyhidden');
+    $('.flip-container').addClass('flip-container_active');  
+});
+$('#main').click(function(e){
+    e.preventDefault();
+    $('.index__authorization').removeClass('visuallyhidden');
+    $('.flip-container').removeClass('flip-container_active');  
+});
