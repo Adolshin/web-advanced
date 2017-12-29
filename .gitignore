@@ -38,7 +38,7 @@ package.json
 .svn
 bower_components
 dist
-build
+
 
 
 # Node.JS
