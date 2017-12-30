@@ -13,8 +13,8 @@
 }
 
 .arrow__img {
-    width: 30px;
-    height: 18px;
+    width: rem(30px);
+    height: rem(18px);
     fill: #fff;
     transition: .3s;
     &.arrow__img_up {

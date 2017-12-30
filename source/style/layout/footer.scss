@@ -8,22 +8,22 @@
     background-color: rgba(40, 40, 40, .85); 
     color: rgba(255, 255, 255, .5);
     @include roboto-light;
-    box-shadow: rgba(0, 0, 0, .6) -2px -2px 40px 2px;   
+    // box-shadow: rgba(0, 0, 0, .6) -2px -2px 40px 2px;   
     z-index: 5;
     
 }
 .footer__row {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
-    height: 75px;
+    padding: 0 rem(30px);
+    height: rem(75px);
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: rem(1px) solid rgba(255, 255, 255, .1);
    
     
 }
 .footer__text {
-    max-width: 460px;
-    margin-right: 30px;
+    max-width: rem(460px);
+    margin-right: rem(30px);
     
 }

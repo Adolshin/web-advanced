@@ -6,7 +6,7 @@
     flex-direction: column; 
     @include bernier_regularregular;
     color: $greydark;
-    font-size: 35px;
+    font-size: rem(35px);
 }
 .subtitle__text {
     text-align: center;
@@ -17,14 +17,14 @@
         display: block;
         content: "-";
         opacity: .2;
-        margin-left: 10px;
+        margin-left: rem(10px);
         transition: .3s;
     }
     &:before {
         display: block;
         content: "-";
         opacity: .2;
-        margin-right: 10px;
+        margin-right: rem(10px);
         transition: .3s;
     }
     &:hover:after,

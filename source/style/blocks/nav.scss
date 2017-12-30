@@ -12,14 +12,14 @@
             .nav__item {
                 width: 100%;
                 margin: 0;
-                border-right: 1px solid transparent;
+                border-right: rem(1px) solid transparent;
                 &:last-child {
                     border: none;
                 }
                 .nav__link {
                     text-align: center;
                     background-color: $greenlight;
-                    padding: 15px 30px;
+                    padding: rem(15px) rem(30px);
                     white-space: nowrap;
                     &:hover {
                         background-color: $green;
@@ -35,7 +35,7 @@
 }
 
 .nav__item {
-    margin-right: 30px;
+    margin-right: rem(30px);
     &:last-child {
         margin-right: 0;
     }

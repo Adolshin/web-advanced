@@ -8,7 +8,7 @@
     }
     &.user_blog {
         .user__title {
-            margin-bottom: 10px;
+            margin-bottom: rem(10px);
         }
         .user__text {
             @include roboto-regular;
@@ -19,9 +19,9 @@
 .user__img {
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
-    width: 150px;
-    height: 150px;
+    margin-bottom: rem(20px);
+    width: rem(150px);
+    height: rem(150px);
 }
 
 .user__img-pic {
@@ -32,8 +32,8 @@
 
 .user__name {
     @include roboto-medium;
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: rem(35px);
+    margin-bottom: rem(10px);
 }
 
 .user__text {

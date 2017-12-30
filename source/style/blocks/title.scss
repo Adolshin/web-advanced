@@ -1,7 +1,7 @@
 .title {
     position: relative;
     @include bernier_regularregular;
-    font-size: 63px;
+    font-size: rem(63px);
     flex-direction: column;
     color: $greydark;
     @include center;
@@ -16,28 +16,28 @@
     }
     &.title_about {
         .title__img {
-            width: 355px;
-            height: 120px;
+            width: rem(330px);
+            height: rem(120px);
         }
     }
     &.title_works {
         .title__img {
-            width: 500px;
-            height: 150px;
+            width: rem(500px);
+            height: rem(150px);
         }
     }
     &.title_reviews {
         .title__img {
-            width: 500px;
-            height: 170px;
+            width: rem(500px);
+            height: rem(170px);
         }
     }
     &.title_blog {
         .title__img {
-            width: 300px;
-            height: 200px;
+            width: rem(300px);
+            height: rem(200px);
             fill: rgba(255, 255, 255, .07);
-            top:-40px;
+            top:rem(-40px);
         }
         .title__text {
             color:#fff;
@@ -63,14 +63,14 @@
         display: block;
         content: "-";
         opacity: .2;
-        margin-left: 15px;
+        margin-left: rem(15px);
         transition: .3s;
     }
     &:before {
         display: block;
         content: "-";
         opacity: .2;
-        margin-right: 15px;
+        margin-right: rem(15px);
         transition: .3s;
     }
 }
