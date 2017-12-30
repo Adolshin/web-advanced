@@ -6,18 +6,18 @@
 }
 
 .loftschool__title {
-    margin-bottom: 35px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-bottom: rem(35px);
+    margin-right: rem(40px);
+    margin-left: rem(40px);
 }
 
 .loftschool__techs {
-    border-top: 1px solid $greenlight;
-    border-bottom: 1px solid $greenlight;
-    padding: 20px 0;
+    border-top: rem(1px) solid $greenlight;
+    border-bottom: rem(1px) solid $greenlight;
+    padding: rem(20px) 0;
     color: $greenlight;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
     text-align: center;
 }
 
@@ -25,18 +25,18 @@
     display: flex;
     align-items: center;
     background-color: $greenlight;
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: rem(5px);
+    padding: rem(10px) rem(15px);
     &:hover {
         background-color: $green;
     }
 }
 
 .loftschool__link-img {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     fill: #fff;
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 
 .loftschool__link-text {

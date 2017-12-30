@@ -10,7 +10,7 @@
 
 .slider__link {
     background-color: $beigelight;
-    padding: 40px 0;
+    padding: rem(40px) 0;
     @include center;
     width: 50%;
     height: 100%;
@@ -21,7 +21,7 @@
 }
 
 .slider__content {
-    padding: 40px 0;
+    padding: rem(40px) 0;
     flex: 1;
     width: 50%;
     background-color: $beige;
@@ -34,7 +34,7 @@
 
 .slider__img {
     max-width: 90%;
-    max-height: 90%; // max-height: 400px;
+    max-height: 90%; // max-height: rem(400px);
 }
 
 .slider__controls {
@@ -50,7 +50,7 @@
 .slider__button-right,
 .slider__button-left {
     width: 50%;
-    height: 175px;
+    height: rem(175px);
     flex-shrink: 0;
     @include center;
     position: relative;

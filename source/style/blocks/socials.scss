@@ -11,8 +11,8 @@
                 right: 0;
                 top: 0;
                 bottom: 0;
-                @include circle (36px, transparent);
-                border: 1px solid rgba(255, 255, 255, 0.5);
+                @include circle (rem(36px), transparent);
+                border: rem(1px) solid rgba(255, 255, 255, 0.5);
                 transition: .3s;
             }
             .socials__icon {
@@ -24,7 +24,7 @@
             }
             &:hover {
                 &:after {
-                    @include circle (36px, #fff);
+                    @include circle (rem(36px), #fff);
                 }
                 .socials__icon {
                     fill: rgba(40, 40, 40, .85);
@@ -49,15 +49,15 @@
 // .socials_header {
 // }
 .socials__item {
-    margin-right: 20px;
+    margin-right: rem(20px);
     &:last-child {
         margin-right: 0;
     }
 }
 
 .socials__link {
-    width: 36px;
-    height: 36px;
+    width: rem(36px);
+    height: rem(36px);
     display: flex;
     align-items: center;
     justify-content: center;
