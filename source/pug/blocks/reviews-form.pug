@@ -8,6 +8,6 @@ form.reviews-form(action="")
         .reviews-form__buttons
             .buttons.buttons_reviews
                 ul.buttons__list
-                    each item in [['Отправить','send'],['Очистить','clear']]
+                    each item in [['Отправить','send','submit'],['Очистить','clear','reset']]
                         li.buttons__item
-                            a.buttons__link(href="#" id=`${item[1]}`) #{item[0]}    
+                            button.buttons__link(id=`${item[1]}` type=`${item[2]}`) #{item[0]}    

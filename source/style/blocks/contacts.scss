@@ -1,23 +1,26 @@
 .contacts {
-    width: 380px;
-    padding: 40px;
+    width: rem(380px);
+    padding: rem(40px);
     display: flex;
     flex-direction: column;
     background-color: #fcfcfc;
     opacity: .85;
-    border-radius: 5px;  
+    border-radius: rem(5px);
+    @include phones {
+        width: 100%;
+    }  
 }
 
 .contacts__title {
     width: 100%;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
 }
 
 // .contacts__list {
 // }
 .contacts__item {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     &:last-child {
         margin-bottom: 0;
     }
@@ -30,10 +33,10 @@
 }
 
 .contacts__img {
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     fill: $greenlight;
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 
 .contacts__text {

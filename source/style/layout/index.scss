@@ -10,21 +10,21 @@
     @include roboto-light;
 }
 
-.index__menu {
-    width: 380px;
-}
+// .index__menu {
+//     width: rem(380px);
+// }
 
 .index__authorization {
     position: absolute;
-    top: 25px;
-    right: 90px;
+    top: rem(25px);
+    right: rem(90px);
     color: #fff;
-    padding: 10px 30px;
-    border: 1px solid #fff;
-    border-radius: 5px;
+    padding: rem(10px) rem(30px);
+    border: rem(1px) solid #fff;
+    border-radius: rem(5px);
 }
 
 .index__copyright {
     position: absolute;
-    bottom: 40px;
+    bottom: rem(40px);
 }

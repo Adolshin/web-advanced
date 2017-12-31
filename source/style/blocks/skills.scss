@@ -4,11 +4,11 @@
 
 .skills__title {
     @include center;
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 }
 
 .skills__text {
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
 }
 
 .skills__list {
@@ -20,12 +20,15 @@
 .skills__item {
     display: flex;
     flex-direction: column;
-    // margin-bottom: 40px;
+    @include tablets {
+        align-items: center;
+    }
+    // margin-bottom: rem(40px);
 }
 
 .skills__item-title {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: rem(28px);
+    margin-bottom: rem(20px);
     
 }
 
@@ -33,21 +36,24 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: center;
-    // margin-left: -40px;
+    margin-left: rem(-40px);
+    @include tablets {
+       justify-content: center;
+    }
 }
 
 .skills__img {
     position: relative;    
     @include center;   
-    margin-right: 40px;
-    margin-bottom: 40px;
+    margin-left: rem(40px);
+    margin-bottom: rem(40px);
    
 }
 
 .skills__img-title {
     position: absolute;
-    max-width: 70px;
-    font-size: 14px;
+    max-width: rem(70px);
+    font-size: rem(14px);
     color: $greenlight;
     text-align: center;
     width: 100%;

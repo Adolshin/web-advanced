@@ -3,42 +3,42 @@
     
     justify-content: center;
     width: 95%;
-    margin: 50px auto 130px;
+    margin: rem(50px) auto rem(130px);
 }
 
 .blog__aside {
     width: 25%;
-    margin-right: 80px;
-    max-width: 300px;
+    margin-right: rem(80px);
+    max-width: rem(300px);
     // position: relative;
 
 }
 
 .blog__content {
     width: 75%;
-    max-width: 980px;
+    max-width: rem(980px);
 }
 
 .blog__article {
-    padding-bottom: 70px;
-    margin-bottom: 70px;
-    border-bottom: 5px solid rgba(109, 112, 112, .07);
+    padding-bottom: rem(70px);
+    margin-bottom: rem(70px);
+    border-bottom: rem(5px) solid rgba(109, 112, 112, .07);
     &:last-child {
         margin-bottom: 0;
         border-bottom: none;
     }
     h4 {
         @include bernier_regularregular;
-        font-size: 35px;
+        font-size: rem(35px);
         color: $greydark;
-        margin-bottom: 30px;
+        margin-bottom: rem(30px);
     }
-    div {
+    time {
         color: $greenlight;
-        margin-bottom: 30px;
+        margin-bottom: rem(30px);
     }
     p {
-        margin-bottom: 20px;
-        margin-right: 100px;
+        margin-bottom: rem(20px);
+        margin-right: rem(100px);
     }
 }

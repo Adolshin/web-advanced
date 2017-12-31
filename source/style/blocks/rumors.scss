@@ -2,34 +2,34 @@
     display: flex;
 }
 .rumors__item {
-    max-width: 380px;
+    max-width: rem(380px);
     position: relative;
-    margin-right: 40px;
+    margin-right: rem(40px);
     &:before {
         content: '“';
         font-family: 'bernier_regularregular';
-        font-size: 140px;
+        font-size: rem(140px);
         line-height: 1;
         position: absolute;
-        top:-80px;
+        top:rem(-80px);
         color: $greydark;
         opacity: .2;
     }
 }
 .rumors__text {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 .rumors__user {
     display: flex;
     align-items: center;
 }
 .rumors__img {
-    width: 80px;
-    height: 80px;
+    width: rem(80px);
+    height: rem(80px);
     border-radius: 50%;
     overflow: hidden;
     @include center;
-    margin-right: 20px;
+    margin-right: rem(20px);
     &:last-child {
         margin-right: 0;
     }
@@ -42,5 +42,5 @@
 }
 .rumors__name {
     @include roboto-bold;
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 }
