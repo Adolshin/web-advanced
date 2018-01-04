@@ -75,7 +75,7 @@
 .cloud4 {
     height: 100%;
     top: -20%;
-    animation: cloud4 650s linear infinite;
+    animation: cloud4 550s linear infinite;
     transform: translate3d(0, 0, 0);
 }
 
@@ -119,7 +119,7 @@
 
 @keyframes cloud4 {
     0% {
-        left: -120%;
+        left: -100%;
     }
     100% {
         left: 110%;
