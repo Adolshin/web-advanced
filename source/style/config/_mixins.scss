@@ -34,12 +34,17 @@
     border-left: $width solid $color;
   }
 }
+
 @mixin center {
   display: flex;
   justify-content: center;
-  align-items: center;    
+  align-items: center;
 }
 
+@mixin title {
+  @include bernier_regularregular;
+  font-size: rem(63px);
+}
 
 %clearfix {
   &:before,
@@ -87,6 +92,12 @@
 
 @mixin phones {
   @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mini {
+  @media screen and (max-width: 400px) {
     @content;
   }
 }
@@ -142,6 +153,7 @@
 @mixin bernier_distressedregular {
   font-family: 'bernier_distressedregular';
 }
+
 @mixin fontawesome {
   font-family: 'fontawesomeregular';
 }

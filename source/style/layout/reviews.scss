@@ -4,10 +4,14 @@
     background-position: 50%;
     background-size: cover;
     position: relative;
+    overflow: hidden;
+}
+
+.reviews__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    width: 100%;
 }
 
 .reviews__back {
@@ -37,25 +41,25 @@
 }
 
 .reviews__form {
-    margin-bottom: rem(70px);
+    margin-bottom: 60px;
     width: rem(380px);
     height: rem(440px);
+    max-width: 95%;
     border-radius: rem(7px);
     overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: rem(1px) solid rgba(255,255,255,.3);
+    justify-content: space-between; // border: rem(1px) solid rgba(255,255,255,.3);
     &:before {
-        content:'';
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: #fff;
-        opacity: .15;
+        opacity: .4;
         z-index: 1;
     }
 }
@@ -80,6 +84,5 @@
 }
 
 .reviews__arrow {
-    transform: rotate(180deg);
-    margin-bottom: rem(200px);
+    transform: rotate(180deg);  
 }

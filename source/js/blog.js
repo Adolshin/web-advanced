@@ -1,3 +1,15 @@
+//Гамбургер-меню 
+$('.hamburger-menu').click(function() {
+    $(this).toggleClass('hamburger-menu_active');
+    $('.overlay').toggleClass('overlay_open');
+    $('body').toggleClass('body_block');    
+  });
+//Вызов боковой панели
+  $('.anchors__tab').click(function(e){ 
+	e.preventDefault();    
+    $('.blog__aside').toggleClass('blog__aside_active');
+       
+  });
 //Плавный переход по якорю
 $(document).ready(function(){
 	$(".arrow").on("click", function (event) {
@@ -30,3 +42,114 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: top}, 500);
 	});
 });
+//Расчет отступа для позиционирования контента над футером
+
+$(document).ready(function () {
+	blog();
+})
+$(window).resize(function () {
+	blog();
+});
+  function blog() {
+	var footerHeight =$('.footer').height(),		
+		blog = $('.blog');	
+	
+	blog.css({
+		'margin-bottom': footerHeight + 20 + 'px'		
+	})
+  }
+//Переход по якорям активный класс
+$('.anchors__link').click(function(e){ 
+	e.preventDefault();   
+	$('.anchors__link').removeClass('anchors__link_active');  
+    $(this).addClass('anchors__link_active');       
+  });
+//Скролл меню блога
+let scrollMenu = (function() {
+	const $news = $('.blog__article');
+	const $item = $('.anchors__item');
+	const $wrapMenu = $('.anchors');
+	let positionArticle = [];
+	let offsetHeight = 0; // смещение реагирования на сменю меню
+  
+	_setPositionArticle = function(element) {
+	  const len = element.length;
+	  element.each(function(item) {
+		positionArticle[item] = {};
+		positionArticle[item].top = $(this).offset().top - offsetHeight;
+		positionArticle[item].bottom =
+		  positionArticle[item].top + $(this).innerHeight();
+	  });
+	  // console.log(positionArticle);
+	};
+  
+	// _scrollPageFixMenu = function(e) {
+	//   let scroll = window.pageYOffset;
+	//   if (scroll < $news.offset().top) {
+	// 	$wrapMenu.removeClass('fixed');
+	//   } else {
+	// 	$wrapMenu.addClass('fixed');
+	//   }
+	// };
+  
+	_scrollPage = function(e) {
+	  let scroll = window.pageYOffset;
+	  positionArticle.forEach( (element, index) => {
+		if (
+		  scroll >= element.top - 250 &&
+		  scroll <= element.bottom 
+		) {
+		  $item
+			.eq(index)
+			.addClass('anchors__item_active')
+			.siblings()
+			.removeClass('anchors__item_active');
+		}
+	  });
+	};
+  
+	// _clickMenu = function(e) {
+	//   let $element = $(e.target);
+	//   let index = $element.index();
+	//   let sectionOffset = positionArticle[index].top;
+  
+	//   $(document).off('scroll', _scrollPage);
+	//   $element.siblings().removeClass('anchors__item_active');
+	//   $('body, html').animate(
+	// 	{
+	// 	  scrollTop: sectionOffset
+	// 	},
+	// 	1000,
+	// 	() => {
+	// 	  $element.addClass('anchors__item_active');
+	// 	  $(document).on('scroll', _scrollPage);
+	// 	}
+	//   );
+	// };
+  
+	addListener = function() {
+	//   $('.anchors').on('click', _clickMenu);
+	  $(document).on('scroll', _scrollPage);
+	//   $(document).on('scroll', _scrollPageFixMenu);
+  
+	  _setPositionArticle($news);
+  
+	  $(window).on('load', function(e) {
+		_setPositionArticle($news);
+	  });
+  
+	  $(window).on('resize', function(e) {
+		_setPositionArticle($news);
+	  });
+  
+	};
+  
+	return {
+	  init: addListener
+	};
+  })();
+  
+  console.log(scrollMenu);
+  scrollMenu.init();
+  
+
