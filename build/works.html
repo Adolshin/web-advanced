@@ -33,10 +33,10 @@
                     <svg class="socials__icon">
                       <use xlink:href="./assets/img/sprite.svg#in"></use>
                     </svg></a></li>
-              </ul><a class="hero__hamburger" href="#">
-            <svg class="hero__hamburger-img">
-              <use xlink:href="./assets/img/sprite.svg#hamburger"> </use>
-            </svg></a>
+              </ul><a class="hamburger-menu" href="#">
+            <div class="hamburger-menu__item hamburger-menu__item_top"></div>
+            <div class="hamburger-menu__item hamburger-menu__item_middle"></div>
+            <div class="hamburger-menu__item hamburger-menu__item_bottom"></div></a>
         </header>
         <div class="hero__user">
               <div class="user user_about">
@@ -56,6 +56,22 @@
                 <svg class="arrow__img arrow__img">
                   <use xlink:href="./assets/img/sprite.svg#arrow_down"> </use>
                 </svg></a>
+        </div>
+        <div class="overlay">
+          <div class="overlay__left left">                 </div>
+          <div class="overlay__center">          
+                <nav class="nav nav_overlay">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="./about.html">Обо мне</a></li>
+                    <li class="nav__item nav__item_active"><a class="nav__link" href="./works.html">Мои работы</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./blog.html">Блог</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./index.html">Авторизация</a></li>
+                  </ul>
+                </nav>
+            <div class="overlay__center-left">    </div>
+            <div class="overlay__center-right"></div>
+          </div>
+          <div class="overlay__right right"></div>
         </div>
       </section>
       <main class="main">     
@@ -106,111 +122,119 @@
             </div>
           </div>
         </section>
-        <section class="section reviews">
+        <section class="section reviews">   
           <div class="reviews__back"><img class="reviews__img" src="./assets/img/reviews-bg.png"></div>
-          <div class="reviews__title">
-                <div class="title title_reviews">
-                  <svg class="title__img">
-                    <use xlink:href="./assets/img/sprite.svg#about_header"></use>
-                  </svg>
-                  <div class="title__text">Что обо мне</div>
-                  <div class="title__subtext">Говорят  </div>
-                </div>
-          </div>
-          <div class="reviews__rumors">
-            <ul class="rumors">
-              <li class="rumors__item">
-                <div class="rumors__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
-                <div class="rumors__user">
-                  <div class="rumors__img"><img class="rumors__img-pic" src="./assets/img/reviews/kov.png"></div>
-                  <div class="rumors__block">
-                    <div class="rumors__name">Ковальчук Дмитрий</div>
-                    <div class="rumors__post">Основатель Loftschool</div>
-                  </div>
-                </div>
-              </li>
-              <li class="rumors__item">
-                <div class="rumors__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
-                <div class="rumors__user">
-                  <div class="rumors__img"><img class="rumors__img-pic" src="./assets/img/reviews/sab.png"></div>
-                  <div class="rumors__block">
-                    <div class="rumors__name">Сабанцев Владимир</div>
-                    <div class="rumors__post">Преподаватель Loftschool</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="reviews__form">
-            <div class="reviews__blur"></div>
-            <div class="reviews__form-title">
-                  <div class="subtitle subtitle_reviews">
-                    <div class="subtitle__text">Связаться со мной      </div>
-                    <div class="subtitle__subtext"> </div>
+          <div class="reviews__content"> 
+            <div class="reviews__title">
+                  <div class="title title_reviews">
+                    <svg class="title__img">
+                      <use xlink:href="./assets/img/sprite.svg#about_header"></use>
+                    </svg>
+                    <div class="title__text">Что обо мне</div>
+                    <div class="title__subtext">Говорят  </div>
                   </div>
             </div>
-            <form class="reviews-form" action="">
-              <div class="reviews-form__container">
-                <div class="reviews-form__fields">
-                  <label class="reviews-form__label">
-                    <input class="reviews-form__input" type="text" placeholder="Имя">
-                  </label>
-                  <label class="reviews-form__label">
-                    <input class="reviews-form__input" type="text" placeholder="Email">
-                  </label>
-                </div>
-                <textarea class="reviews-form__textarea" placeholder="Ваше сообщение"></textarea>
-                <div class="reviews-form__buttons">
-                  <div class="buttons buttons_reviews">
-                    <ul class="buttons__list">
-                      <li class="buttons__item">
-                        <button class="buttons__link" id="send" type="submit">Отправить    </button>
-                      </li>
-                      <li class="buttons__item">
-                        <button class="buttons__link" id="clear" type="reset">Очистить    </button>
-                      </li>
-                    </ul>
+            <div class="reviews__rumors">
+              <ul class="rumors">
+                <li class="rumors__item">
+                  <div class="rumors__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                  <div class="rumors__user">
+                    <div class="rumors__img"><img class="rumors__img-pic" src="./assets/img/reviews/kov.png"></div>
+                    <div class="rumors__block">
+                      <div class="rumors__name">Ковальчук Дмитрий</div>
+                      <div class="rumors__post">Основатель Loftschool</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="rumors__item">
+                  <div class="rumors__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+                  <div class="rumors__user">
+                    <div class="rumors__img"><img class="rumors__img-pic" src="./assets/img/reviews/sab.png"></div>
+                    <div class="rumors__block">
+                      <div class="rumors__name">Сабанцев Владимир</div>
+                      <div class="rumors__post">Преподаватель Loftschool</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="reviews__form">
+              <div class="reviews__blur"></div>
+              <div class="reviews__form-title">
+                    <div class="subtitle subtitle_reviews">
+                      <div class="subtitle__text">Связаться со мной      </div>
+                      <div class="subtitle__subtext"> </div>
+                    </div>
+              </div>
+              <form class="reviews-form" action="">
+                <div class="reviews-form__container">
+                  <div class="reviews-form__fields">
+                    <label class="reviews-form__label">
+                      <input class="reviews-form__input" type="text" placeholder="Имя">
+                    </label>
+                    <label class="reviews-form__label">
+                      <input class="reviews-form__input" type="text" placeholder="Email">
+                    </label>
+                  </div>
+                  <textarea class="reviews-form__textarea" placeholder="Ваше сообщение"></textarea>
+                  <div class="reviews-form__buttons">
+                    <div class="buttons buttons_reviews">
+                      <ul class="buttons__list">
+                        <li class="buttons__item">
+                          <button class="buttons__link" id="send" type="submit">Отправить    </button>
+                        </li>
+                        <li class="buttons__item">
+                          <button class="buttons__link" id="clear" type="reset">Очистить    </button>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </form>
-          </div>
-          <div class="reviews__arrow"><a class="arrow arrow_reviews" href="#anchordown">
-                  <svg class="arrow__img arrow__img">
-                    <use xlink:href="./assets/img/sprite.svg#arrow_down"> </use>
-                  </svg></a>
+              </form>
+            </div>
+            <div class="reviews__arrow"><a class="arrow arrow_reviews" href="#anchordown">
+                    <svg class="arrow__img arrow__img">
+                      <use xlink:href="./assets/img/sprite.svg#arrow_down"> </use>
+                    </svg></a>
+            </div>
           </div>
         </section>
       </main>
       <footer class="footer">
         <div class="footer__row">
-              <nav class="nav nav_footer">
-                <ul class="nav__list">
-                  <li class="nav__item"><a class="nav__link" href="./about.html">Обо мне</a></li>
-                  <li class="nav__item nav__item_active"><a class="nav__link" href="./works.html">Мои работы</a></li>
-                  <li class="nav__item"><a class="nav__link" href="./blog.html">Блог</a></li>
-                  <li class="nav__item"><a class="nav__link" href="./index.html">Авторизация</a></li>
+          <div class="footer__block">
+                <nav class="nav nav_footer">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="./about.html">Обо мне</a></li>
+                    <li class="nav__item nav__item_active"><a class="nav__link" href="./works.html">Мои работы</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./blog.html">Блог</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./index.html">Авторизация</a></li>
+                  </ul>
+                </nav>
+          </div>
+          <div class="footer__block">  
+                <ul class="socials socials_footer">
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/img/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/img/sprite.svg#in"></use>
+                      </svg></a></li>
                 </ul>
-              </nav>
-              <ul class="socials socials_footer">
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__icon">
-                      <use xlink:href="./assets/img/sprite.svg#vk"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__icon">
-                      <use xlink:href="./assets/img/sprite.svg#github"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__icon">
-                      <use xlink:href="./assets/img/sprite.svg#in"></use>
-                    </svg></a></li>
-              </ul>
+          </div>
         </div>
         <div class="footer__row">
-          <div class="footer__text">Я веб-разработчик из Москвы, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
-          <div class="footer__copyright">
-            <div class="copyright">© Тимур Адольшин | создано с любовью в LoftSchool | 2017</div>
+          <div class="footer__block">
+            <div class="footer__text">Я веб-разработчик из Москвы, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+          </div>
+          <div class="footer__block">
+                <div class="copyright copyright_footer">copyright © Тимур Адольшин | создано с любовью в LoftSchool | 2017</div>
           </div>
         </div>
       </footer>

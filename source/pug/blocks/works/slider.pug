@@ -1,0 +1,22 @@
+//- .slider
+//-   ul.slider__list
+//-     each item, index in [['1','2'],['3','4']]
+//-       li(class=`slider__item` + ((index === activeItem) ? `slider__item_active` : ''))
+//-         .slider__img
+//-           each s in item
+//-             .slider__img-pic(scr=`./assets/img/slider/${s.png}`)
+
+.slider
+  .slider__link
+    include ../../blocks/works/loftschool
+  .slider__content
+    img.slider__img(src="./assets/img/slider/main.png")
+  .slider__controls
+    .slider__button-left
+      img.slider__button-img(src="./assets/img/slider/down.png")
+      .slider__arrow.slider__arrow_left
+        +arrow('slider','#')
+    .slider__button-right
+      img.slider__button-img(src="./assets/img/slider/up.png")
+      .slider__arrow.slider__arrow_right
+        +arrow('slider','#')

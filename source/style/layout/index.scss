@@ -1,8 +1,4 @@
 .index {
-    background-image: url('../img/index-bg.png');
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
     height: 100vh;
     @include center;
     position: relative;
@@ -13,7 +9,6 @@
 // .index__menu {
 //     width: rem(380px);
 // }
-
 .index__authorization {
     position: absolute;
     top: rem(25px);

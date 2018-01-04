@@ -1,5 +1,6 @@
 .hero {
     background-image: url('../img/hero-bg.png');
+    overflow: hidden;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -26,23 +27,17 @@
     justify-content: space-between;
     padding: rem(30px);
     position: relative;
-    z-index: 1;
+    // z-index: 2;
     // margin-bottom: rem(80px);
 }
-.hero__hamburger {
-    &:hover {
-        .hero__hamburger-img {
-            fill: rgba(255, 255, 255, 1);
-        }
-    }
-}
 
-.hero__hamburger-img {
-    width: rem(40px);
-    height: rem(36px);
-    fill: rgba(255, 255, 255, .5);
-    transition: .3s;
-}
+
+// .hero__hamburger-img {
+//     width: rem(40px);
+//     height: rem(36px);
+//     fill: rgba(255, 255, 255, .5);
+//     transition: .3s;
+// }
 .hero__user {
     position: absolute;
     top:45%;

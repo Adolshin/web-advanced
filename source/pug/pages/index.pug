@@ -3,10 +3,11 @@ extends ../_templateindex
 block variables
   - var title = 'Главная'
 block content
-    .wrapper
-        section.section.index
-            .index__menu
-                include ../blocks/flipper
-            a.index__authorization(href="#") Авторизоваться
-            .index__copyright
-                 include ../blocks/copyright
+    include ../blocks/common/parallax
+    section.section.index
+        .index__menu
+            include ../blocks/index/flipper
+        a.index__authorization(href="#") Авторизоваться
+        .index__copyright
+                +copyright('index')    
+

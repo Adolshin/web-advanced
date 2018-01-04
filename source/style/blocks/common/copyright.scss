@@ -1,0 +1,8 @@
+.copyright {
+    &.copyright_footer {
+        text-align: right;
+        @include tablets {
+            text-align: center;
+        }
+    }
+}
