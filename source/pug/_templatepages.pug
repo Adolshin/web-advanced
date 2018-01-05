@@ -32,21 +32,21 @@ html
     <![endif]-->
 
   body
-    include ./common/_mixins
-    include ./common/_variables
+    include ./blocks/common/_mixins
+    include ./_variables
     .wrapper
       section.section.hero#anchordown       
         header.hero__header
           +socials('header')
-          a.hero__hamburger(href="#")
-            svg.hero__hamburger-img
-              use(xlink:href="./assets/img/sprite.svg#hamburger") 
+          include ./blocks/common/hamburger-menu                 
         .hero__user
           block user
-        block hero            
+        block hero
+        include ./blocks/common/overlay            
       main.main      
         block content        
-      include ./common/footer
+      include ./blocks/common/footer
+   
     block js   
 
 

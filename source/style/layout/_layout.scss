@@ -1,5 +1,5 @@
 html {
-  font-size: 16px; 
+  font-size: 16px;
   @include laptop {
     font-size: .95rem;
   }
@@ -8,8 +8,7 @@ html {
   }
   @include phones {
     font-size: .85rem;
-  }
-  // @include middle {
+  } // @include middle {
   //   font-size: .8rem;
   // }
   // @include small {
@@ -28,14 +27,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @include roboto-regular;
   color: $grey;
-  
+}
+
+.body_block {
+overflow: hidden;
+  left: 0;
+  right: 0;
 }
 
 .wrapper {
   width: 100%; // background-color: $beigelight;
   position: relative;
   height: 100%;
-  // min-width: 320px;
+  min-width: 320px; 
+  // overflow-x: hidden;
 }
 
 .main {
@@ -46,5 +51,4 @@ body {
 
 .section {
   width: 100%;
-  
 }

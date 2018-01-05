@@ -1,0 +1,56 @@
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include bernier_regularregular;
+    color: $greydark;
+    font-size: rem(35px);
+    &.subtitle_slider {
+        flex-direction: row;
+        align-items: flex-start;
+        &:after {
+            display: block;
+            content: "-";
+            opacity: .2;
+            margin-left: rem(10px);
+            transition: .3s;
+        }
+        &:before {
+            display: block;
+            content: "-";
+            opacity: .2;
+            margin-right: rem(10px);
+            transition: .3s;
+        }
+        &:hover:after,
+        &:hover:before {
+            opacity: 1;
+        }
+    }
+}
+
+.subtitle__text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+        display: block;
+        content: "-";
+        opacity: .2;
+        margin-left: rem(10px);
+        transition: .3s;
+    }
+    &:before {
+        display: block;
+        content: "-";
+        opacity: .2;
+        margin-right: rem(10px);
+        transition: .3s;
+    }
+    &:hover:after,
+    &:hover:before {
+        opacity: 1;
+    }
+}

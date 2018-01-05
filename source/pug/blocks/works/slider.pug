@@ -1,0 +1,43 @@
+//- .slider
+//-   .slider__link
+//-     include ../../blocks/works/loftschool
+//-   .slider__content
+//-     img.slider__img(src="./assets/img/slider/main.png")
+//-   .slider__controls
+//-     .slider__button-left
+//-       img.slider__button-img(src="./assets/img/slider/down.png")
+//-       .slider__arrow.slider__arrow_left
+//-         +arrow('slider','#')
+//-     .slider__button-right
+//-       img.slider__button-img(src="./assets/img/slider/up.png")
+//-       .slider__arrow.slider__arrow_right
+//-         +arrow('slider','#')
+
+.slider
+  .slider__about
+    .slider__about-title     
+      .subtitle.subtitle_slider
+        .slider__about-title-text       
+    .slider__about-desc 
+    a.slider__about-link(href='#' target="_blank")
+      svg.slider__about-link-img 
+        use(xlink:href='./assets/img/sprite.svg#link')
+      .slider__about-link-text Посмотреть сайт
+  .slider__content
+    img.slider__img(src="")
+  .slider__controls
+    a.slider__button-left(href="#")
+      ul.slider__button-list
+        li.slider__button-item(data-full="./assets/img/slider/1.png" data-title=`Агентсво интернет решений "ITLoft"` data-skills="node" data-link="http://itloft.ru/")
+          img.slider__button-img(src="./assets/img/slider/1.png")
+        li.slider__button-item(data-full="./assets/img/slider/2.png" data-title=`Школа онлай-образования "LoftSchool"` data-skills="html5, CSS3, javascript, php" data-link="http://loftschool.com/")
+          img.slider__button-img(src="./assets/img/slider/2.png")
+        li.slider__button-item(data-full="./assets/img/slider/3.png" data-title=`Портал обучающих уроков "LoftBlog"` data-skills="Ruby on Rails, javascript, RESTful" data-link="http://loftblog.ru/")
+          img.slider__button-img(src="./assets/img/slider/3.png")
+        li.slider__button-item(data-full="./assets/img/slider/4.png" data-title=`Сайт "Атма йога"` data-skills="UX, design, seo" data-link="http://atmayoga.ru/")
+          img.slider__button-img(src="./assets/img/slider/4.png")
+      //- .slider__arrow.slider__arrow_left
+      //-   +arrow('slider','#')
+    a.slider__button-right(href="#")      
+      //- .slider__arrow.slider__arrow_right
+      //-   +arrow('slider','#')

@@ -24,14 +24,14 @@ block content
         .about__title
           +title('about', 'about_header', 'Обо мне') 
       .about__left-column
-        include ../blocks/user-about      
+        include ../blocks/about/user-about      
     .about__right
       .about__skills
-        include ../blocks/skills 
+        include ../blocks/about/skills 
   section.section.map
     .map__map#map
     .map__contacts
-      include ../blocks/contacts
+      include ../blocks/about/contacts
 //- block footer
 //-   - var navactive = 0  
 //-   include ../common/footer  
