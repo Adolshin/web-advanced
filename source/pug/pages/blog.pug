@@ -9,6 +9,7 @@ block scripts
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.9.0/plugins/line-numbers/prism-line-numbers.min.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.9.0/prism.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.9.0/plugins/line-numbers/prism-line-numbers.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/vue")
 
 block user
     .user.user_blog
@@ -95,6 +96,9 @@ block content
                     (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
                     рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
                     за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                //- div(id='app')
+                //-     input(type='text' v-on:input='changTitle')
+                //-     h1 {{title}}
 block js
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
   script(src="./assets/js/blog.js")
