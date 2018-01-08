@@ -34,6 +34,10 @@ html
   body
     include ./blocks/common/_mixins
     include ./_variables
-    block content
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
-    script(src="./assets/js/index.js")
+    .admin
+        header.admin__header
+            .admin__header-title Панель администрирования
+            a.admin__header-link(href='./index.html') Вернуться на сайт
+        +nav('admin-nav','admin', tabs, navactive)
+        .admin__content
+            block content

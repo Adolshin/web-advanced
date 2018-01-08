@@ -31,7 +31,7 @@
                 .login-form__buttons
                     .buttons.buttons_login
                         ul.buttons__list
-                            each item in [['На главную','main'],['Войти','submit']]
+                            each item in [['На главную','main','#'],['Войти','submit','https://adolshin.github.io/web-advanced-admin/']]
                                 li.buttons__item
-                                    a.buttons__link(href="#" id=`${item[1]}`) #{item[0]}    
+                                    a.buttons__link(href=`${item[2]}` id=`${item[1]}`) #{item[0]}    
     
