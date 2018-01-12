@@ -32,6 +32,7 @@ html
     <![endif]-->
 
   body
+  include ./blocks/common/preloader
     include ./blocks/common/_mixins
     include ./_variables
     .wrapper
@@ -45,8 +46,7 @@ html
         include ./blocks/common/overlay            
       main.main      
         block content        
-      include ./blocks/common/footer
-   
+      include ./blocks/common/footer  
     block js   
 
 

@@ -16,134 +16,139 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="parallax">
-      <div class="parallax__layer"><img src="./assets/img/parallax/Layer1.png"></div>
-      <div class="parallax__layer"><img src="./assets/img/parallax/Layer2.png"></div>
-      <div class="parallax__layer cloud4"><img src="./assets/img/parallax/cloud2.png"></div>
-      <div class="parallax__layer"><img src="./assets/img/parallax/Layer3.png"></div>
-      <div class="parallax__layer cloud1"><img src="./assets/img/parallax/cloud1.png"></div>
-      <div class="parallax__layer"><img src="./assets/img/parallax/Layer4.png"></div>
-      <div class="parallax__layer"><img src="./assets/img/parallax/Layer5.png"></div>
-      <div class="parallax__layer cloud5"><img src="./assets/img/parallax/cloud1.png"></div>
-      <div class="parallax__layer cloud2"><img src="./assets/img/parallax/cloud2.png"></div>
-      <div class="parallax__layer"><img src="./assets/img/parallax/Layer6.png"></div>
-      <div class="parallax__layer"><img src="./assets/img/parallax/Layer7.png"></div>
-      <div class="parallax__layer cloud6"><img src="./assets/img/parallax/cloud6.png"></div>
-      <div class="parallax__layer cloud3"><img src="./assets/img/parallax/cloud7.png"></div>
+    <div class="preloader"><img class="preloader__img" src="./assets/img/bg.jpg"><img class="preloader__pic" src="./assets/img/tail-spin.svg">
+      <div class="preloader__count" id="count">0%</div>
     </div>
-    <section class="section index">
-      <div class="index__menu">
-        <div class="flip-container">
-          <div class="flipper">
-            <div class="flipper__front">
-              <div class="welcome">
-                <div class="welcome__user">
-                      <div class="user user_index">
-                        <div class="user__img"><img class="user__img-pic" src="./assets/img/about/photo.png" alt="Фото"></div>
-                        <div class="user__name">Тимур Адольшин</div>
-                        <div class="user__text">Личный веб-сайт разработчика</div>
-                      </div>
-                </div>
-                <div class="welcome__socials">
-                      <ul class="socials socials_index">
-                        <li class="socials__item"><a class="socials__link" href="#">
-                            <svg class="socials__icon">
-                              <use xlink:href="./assets/img/sprite.svg#vk"></use>
-                            </svg></a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                            <svg class="socials__icon">
-                              <use xlink:href="./assets/img/sprite.svg#github"></use>
-                            </svg></a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                            <svg class="socials__icon">
-                              <use xlink:href="./assets/img/sprite.svg#in"></use>
-                            </svg></a></li>
-                      </ul>
-                </div>
-                <div class="welcome__nav">
-                      <nav class="buttons buttons_welcome">
-                        <ul class="buttons__list">
-                          <li class="buttons__item"><a class="buttons__link" href="./about.html">Обо мне</a></li>
-                          <li class="buttons__item"><a class="buttons__link" href="./works.html">Мои работы</a></li>
-                          <li class="buttons__item"><a class="buttons__link" href="./blog.html">Блог</a></li>
+    <div class="wrapper">
+      <div class="parallax">
+        <div class="parallax__layer"><img src="./assets/img/parallax/Layer1.png"></div>
+        <div class="parallax__layer"><img src="./assets/img/parallax/Layer2.png"></div>
+        <div class="parallax__layer cloud4"><img src="./assets/img/parallax/cloud2.png"></div>
+        <div class="parallax__layer"><img src="./assets/img/parallax/Layer3.png"></div>
+        <div class="parallax__layer cloud1"><img src="./assets/img/parallax/cloud1.png"></div>
+        <div class="parallax__layer"><img src="./assets/img/parallax/Layer4.png"></div>
+        <div class="parallax__layer"><img src="./assets/img/parallax/Layer5.png"></div>
+        <div class="parallax__layer cloud5"><img src="./assets/img/parallax/cloud1.png"></div>
+        <div class="parallax__layer cloud2"><img src="./assets/img/parallax/cloud2.png"></div>
+        <div class="parallax__layer"><img src="./assets/img/parallax/Layer6.png"></div>
+        <div class="parallax__layer"><img src="./assets/img/parallax/Layer7.png"></div>
+        <div class="parallax__layer cloud6"><img src="./assets/img/parallax/cloud6.png"></div>
+        <div class="parallax__layer cloud3"><img src="./assets/img/parallax/cloud7.png"></div>
+      </div>
+      <section class="section index">
+        <div class="index__menu">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="flipper__front">
+                <div class="welcome">
+                  <div class="welcome__user">
+                        <div class="user user_index">
+                          <div class="user__img"><img class="user__img-pic" src="./assets/img/about/photo.png" alt="Фото"></div>
+                          <div class="user__name">Тимур Адольшин</div>
+                          <div class="user__text">Личный веб-сайт разработчика</div>
+                        </div>
+                  </div>
+                  <div class="welcome__socials">
+                        <ul class="socials socials_index">
+                          <li class="socials__item"><a class="socials__link" href="#">
+                              <svg class="socials__icon">
+                                <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                              </svg></a></li>
+                          <li class="socials__item"><a class="socials__link" href="#">
+                              <svg class="socials__icon">
+                                <use xlink:href="./assets/img/sprite.svg#github"></use>
+                              </svg></a></li>
+                          <li class="socials__item"><a class="socials__link" href="#">
+                              <svg class="socials__icon">
+                                <use xlink:href="./assets/img/sprite.svg#in"></use>
+                              </svg></a></li>
                         </ul>
-                      </nav>
+                  </div>
+                  <div class="welcome__nav">
+                        <nav class="buttons buttons_welcome">
+                          <ul class="buttons__list">
+                            <li class="buttons__item"><a class="buttons__link" href="./about.html">Обо мне</a></li>
+                            <li class="buttons__item"><a class="buttons__link" href="./works.html">Мои работы</a></li>
+                            <li class="buttons__item"><a class="buttons__link" href="./blog.html">Блог</a></li>
+                          </ul>
+                        </nav>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="flipper__back">
-              <div class="login">
-                <div class="login__title">
-                      <div class="subtitle subtitle_login">
-                        <div class="subtitle__text">Авторизуйтесь      </div>
-                        <div class="subtitle__subtext"> </div>
-                      </div>
-                </div>
-                <div class="login__form">
-                  <form class="login-form" action="">
-                    <div class="login-form__container">
-                      <div class="login-form__fields">
-                        <label class="login-form__block">
-                          <div class="login-form__pic">
-                            <svg class="login-form__img">
-                              <use xlink:href="./assets/img/sprite.svg#login"></use>
-                            </svg>
-                          </div>
-                          <input class="login-form__input" type="text" placeholder="Логин">
-                        </label>
-                        <label class="login-form__block">
-                          <div class="login-form__pic">
-                            <svg class="login-form__img">
-                              <use xlink:href="./assets/img/sprite.svg#password"></use>
-                            </svg>
-                          </div>
-                          <input class="login-form__input" type="text" placeholder="Пароль">
-                        </label>
-                      </div>
-                      <div class="login-form__captcha">
-                        <label class="login-form__checkbox">
-                          <input class="login-form__checkbox-input" type="checkbox">
-                          <div class="login-form__checkbox-pic">
-                            <svg class="login-form__checkbox-img">
-                              <use xlink:href="./assets/img/sprite.svg#check"></use>
-                            </svg>
-                          </div>
-                          <div class="login-form__checkbox-text">Я человек</div>
-                        </label>
-                        <div class="login-form__captcha-title">Вы точно не робот?</div>
-                        <div class="login-form__captcha-row">
-                          <label class="login-form__radio">
-                            <input class="login-form__radio-input" type="radio" name="captcha">
-                            <div class="login-form__radio-img"></div>
-                            <div class="login-form__radio-text">Да</div>
+              <div class="flipper__back">
+                <div class="login">
+                  <div class="login__title">
+                        <div class="subtitle subtitle_login">
+                          <div class="subtitle__text">Авторизуйтесь      </div>
+                          <div class="subtitle__subtext"> </div>
+                        </div>
+                  </div>
+                  <div class="login__form">
+                    <form class="login-form" action="">
+                      <div class="login-form__container">
+                        <div class="login-form__fields">
+                          <label class="login-form__block">
+                            <div class="login-form__pic">
+                              <svg class="login-form__img">
+                                <use xlink:href="./assets/img/sprite.svg#login"></use>
+                              </svg>
+                            </div>
+                            <input class="login-form__input" type="text" placeholder="Логин">
                           </label>
-                          <label class="login-form__radio">
-                            <input class="login-form__radio-input" type="radio" name="captcha">
-                            <div class="login-form__radio-img"></div>
-                            <div class="login-form__radio-text">Не уверен</div>
+                          <label class="login-form__block">
+                            <div class="login-form__pic">
+                              <svg class="login-form__img">
+                                <use xlink:href="./assets/img/sprite.svg#password"></use>
+                              </svg>
+                            </div>
+                            <input class="login-form__input" type="text" placeholder="Пароль">
                           </label>
                         </div>
-                      </div>
-                      <div class="login-form__buttons">
-                        <div class="buttons buttons_login">
-                          <ul class="buttons__list">
-                            <li class="buttons__item"><a class="buttons__link" href="#" id="main">На главную    </a></li>
-                            <li class="buttons__item"><a class="buttons__link" href="https://adolshin.github.io/web-advanced-admin/" id="submit">Войти    </a></li>
-                          </ul>
+                        <div class="login-form__captcha">
+                          <label class="login-form__checkbox">
+                            <input class="login-form__checkbox-input" type="checkbox">
+                            <div class="login-form__checkbox-pic">
+                              <svg class="login-form__checkbox-img">
+                                <use xlink:href="./assets/img/sprite.svg#check"></use>
+                              </svg>
+                            </div>
+                            <div class="login-form__checkbox-text">Я человек</div>
+                          </label>
+                          <div class="login-form__captcha-title">Вы точно не робот?</div>
+                          <div class="login-form__captcha-row">
+                            <label class="login-form__radio">
+                              <input class="login-form__radio-input" type="radio" name="captcha">
+                              <div class="login-form__radio-img"></div>
+                              <div class="login-form__radio-text">Да</div>
+                            </label>
+                            <label class="login-form__radio">
+                              <input class="login-form__radio-input" type="radio" name="captcha">
+                              <div class="login-form__radio-img"></div>
+                              <div class="login-form__radio-text">Не уверен</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="login-form__buttons">
+                          <div class="buttons buttons_login">
+                            <ul class="buttons__list">
+                              <li class="buttons__item"><a class="buttons__link" href="#" id="main">На главную    </a></li>
+                              <li class="buttons__item"><a class="buttons__link" href="https://adolshin.github.io/web-advanced-admin/" id="submit">Войти    </a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div><a class="index__authorization" href="#">Авторизоваться</a>
+        <div class="index__copyright">
+              <div class="copyright copyright_index">copyright © Тимур Адольшин | создано с любовью в LoftSchool | 2017</div>
         </div>
-      </div><a class="index__authorization" href="#">Авторизоваться</a>
-      <div class="index__copyright">
-            <div class="copyright copyright_index">copyright © Тимур Адольшин | создано с любовью в LoftSchool | 2017</div>
-      </div>
-    </section>
+      </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>

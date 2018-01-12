@@ -20,200 +20,203 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-  <body>
-    <div class="wrapper">
-      <section class="section hero" id="anchordown">      
-        <header class="hero__header">
-              <ul class="socials socials_header">
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__icon">
-                      <use xlink:href="./assets/img/sprite.svg#vk"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__icon">
-                      <use xlink:href="./assets/img/sprite.svg#github"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
-                    <svg class="socials__icon">
-                      <use xlink:href="./assets/img/sprite.svg#in"></use>
-                    </svg></a></li>
-              </ul><a class="hamburger-menu" href="#">
-            <div class="hamburger-menu__item hamburger-menu__item_top"></div>
-            <div class="hamburger-menu__item hamburger-menu__item_middle"></div>
-            <div class="hamburger-menu__item hamburger-menu__item_bottom"></div></a>
-        </header>
-        <div class="hero__user">
-          <div class="user user_blog">
-            <div class="user__img"><img class="user__img-pic" src="./assets/img/about/photo.png" alt="Фото"></div>
-            <div class="user__title">
-                  <div class="title title_blog">
-                    <svg class="title__img">
-                      <use xlink:href="./assets/img/sprite.svg#blog_header"></use>
-                    </svg>
-                    <div class="title__text">Блог</div>
-                    <div class="title__subtext">  </div>
-                  </div>
+  <body></body>
+  <div class="preloader"><img class="preloader__img" src="./assets/img/bg.jpg"><img class="preloader__pic" src="./assets/img/tail-spin.svg">
+    <div class="preloader__count" id="count">0%
+      <div class="wrapper">
+        <section class="section hero" id="anchordown">      
+          <header class="hero__header">
+                  <ul class="socials socials_header">
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                          <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                          <use xlink:href="./assets/img/sprite.svg#github"></use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                          <use xlink:href="./assets/img/sprite.svg#in"></use>
+                        </svg></a></li>
+                  </ul><a class="hamburger-menu" href="#">
+              <div class="hamburger-menu__item hamburger-menu__item_top"></div>
+              <div class="hamburger-menu__item hamburger-menu__item_middle"></div>
+              <div class="hamburger-menu__item hamburger-menu__item_bottom"></div></a>
+          </header>
+          <div class="hero__user">
+            <div class="user user_blog">
+              <div class="user__img"><img class="user__img-pic" src="./assets/img/about/photo.png" alt="Фото"></div>
+              <div class="user__title">
+                      <div class="title title_blog">
+                        <svg class="title__img">
+                          <use xlink:href="./assets/img/sprite.svg#blog_header"></use>
+                        </svg>
+                        <div class="title__text">Блог</div>
+                        <div class="title__subtext">  </div>
+                      </div>
+              </div>
+              <div class="user__text">Статьи, которые я написал</div>
             </div>
-            <div class="user__text">Статьи, которые я написал</div>
           </div>
-        </div>
-            <svg class="triangles" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
-              <polygon class="triangles triangles_color_white" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-              <polygon class="triangles triangles_color_white" points="1000,0   1000,86   500,86   500,75.5"> </polygon>
-            </svg>
-        <div class="hero__arrow"><a class="arrow arrow_hero" href="#anchor">
-                <svg class="arrow__img arrow__img">
-                  <use xlink:href="./assets/img/sprite.svg#arrow_down"> </use>
-                </svg></a>
-        </div>
-        <div class="overlay">
-          <div class="overlay__left left">                 </div>
-          <div class="overlay__center">          
-                <nav class="nav nav_overlay">
-                  <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="./about.html">Обо мне</a></li>
-                    <li class="nav__item"><a class="nav__link" href="./works.html">Мои работы</a></li>
-                    <li class="nav__item nav__item_active"><a class="nav__link" href="./blog.html">Блог</a></li>
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Авторизация</a></li>
-                  </ul>
-                </nav>
-            <div class="overlay__center-left">    </div>
-            <div class="overlay__center-right"></div>
+                <svg class="triangles" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+                  <polygon class="triangles triangles_color_white" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+                  <polygon class="triangles triangles_color_white" points="1000,0   1000,86   500,86   500,75.5"> </polygon>
+                </svg>
+          <div class="hero__arrow"><a class="arrow arrow_hero" href="#anchor">
+                    <svg class="arrow__img arrow__img">
+                      <use xlink:href="./assets/img/sprite.svg#arrow_down"> </use>
+                    </svg></a>
           </div>
-          <div class="overlay__right right"></div>
-        </div>
-      </section>
-      <main class="main">     
-        <section class="blog" id="anchor">
-          <aside class="blog__aside">
-                <div class="anchors">      
-                  <ul class="anchors__list">
-                    <li class="anchors__item anchors__item_active"><a class="anchors__link" href="#article1">Самое важное в SASS</a></li>
-                    <li class="anchors__item"><a class="anchors__link" href="#article2">Приёмы в верстке, без которых не обходится ни один сайт</a></li>
-                    <li class="anchors__item"><a class="anchors__link" href="#article3">Самый необходимый набор Gulp плагинов</a></li>
-                    <li class="anchors__item"><a class="anchors__link" href="#article4">Почему я выбрал Pug</a></li>
-                  </ul><a class="anchors__tab" href="#"> </a>
-                </div>
-          </aside>
-          <div class="blog__content">
-            <article class="blog__article" id="article1">
-              <h4>Самое важное в sass</h4>
-              <time>22 ноября 2017</time>
-              <p>
-                Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по
-                разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной
-                деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной
-                деятельности играет важную роль в формировании систем массового участия.
-              </p>
-              <p>
-                Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем
-                массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает
-                широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
-                Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития.
-                С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров,
-                соответствует насущным потребностям.
-              </p>
-              <pre class="line-numbers"><code class="language-js">//Присвоить
+          <div class="overlay">
+            <div class="overlay__left left">                 </div>
+            <div class="overlay__center">          
+                    <nav class="nav nav_overlay">
+                      <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="./about.html">Обо мне</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./works.html">Мои работы</a></li>
+                        <li class="nav__item nav__item_active"><a class="nav__link" href="./blog.html">Блог</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./index.html">Авторизация</a></li>
+                      </ul>
+                    </nav>
+              <div class="overlay__center-left">    </div>
+              <div class="overlay__center-right"></div>
+            </div>
+            <div class="overlay__right right"></div>
+          </div>
+        </section>
+        <main class="main">     
+          <section class="blog" id="anchor">
+            <aside class="blog__aside">
+                    <div class="anchors">      
+                      <ul class="anchors__list">
+                        <li class="anchors__item anchors__item_active"><a class="anchors__link" href="#article1">Самое важное в SASS</a></li>
+                        <li class="anchors__item"><a class="anchors__link" href="#article2">Приёмы в верстке, без которых не обходится ни один сайт</a></li>
+                        <li class="anchors__item"><a class="anchors__link" href="#article3">Самый необходимый набор Gulp плагинов</a></li>
+                        <li class="anchors__item"><a class="anchors__link" href="#article4">Почему я выбрал Pug</a></li>
+                      </ul><a class="anchors__tab" href="#"> </a>
+                    </div>
+            </aside>
+            <div class="blog__content">
+              <article class="blog__article" id="article1">
+                <h4>Самое важное в sass</h4>
+                <time>22 ноября 2017</time>
+                <p>
+                  Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по
+                  разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной
+                  деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной
+                  деятельности играет важную роль в формировании систем массового участия.
+                </p>
+                <p>
+                  Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем
+                  массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает
+                  широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
+                  Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития.
+                  С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров,
+                  соответствует насущным потребностям.
+                </p>
+                <pre class="line-numbers"><code class="language-js">//Присвоить
 $(document).data('prop', {anything: "Любой объект"})
 
 //Просчитать
 alert($(document).data('prop').anything) //Любой объект</code></pre>
-            </article>
-            <article class="blog__article" id="article2">
-              <h4>Приёмы в верстке, без которых не обходится ни один сайт</h4>
-              <time>13 ноября 2017</time>
-              <p>
-                Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений
-                прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании
-                новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-              </p>
-              <p>
-                Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
-                систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
-                (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
-                рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
-                за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-              </p>
-            </article>
-            <article class="blog__article" id="article3">
-              <h4>Самый необходимый набор Gulp плагинов</h4>
-              <time>22 ноября 2017</time>
-              <p>
-                Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
-                систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
-                (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
-                рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
-                за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-              </p>
-              <p>
-                Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
-                систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
-                (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
-                рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
-                за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-              </p>
-            </article>
-            <article class="blog__article" id="article4">
-              <h4>Почему я выбрал Pug</h4>
-              <time>22 ноября 2017</time>
-              <p>
-                Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
-                систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
-                (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
-                    рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
-                за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-              </p>
-              <p>
-                Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
-                систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
-                (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
-                рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
-                за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-              </p>
-            </article>
+              </article>
+              <article class="blog__article" id="article2">
+                <h4>Приёмы в верстке, без которых не обходится ни один сайт</h4>
+                <time>13 ноября 2017</time>
+                <p>
+                  Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений
+                  прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании
+                  новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                </p>
+                <p>
+                  Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
+                  систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
+                  (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
+                  рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
+                  за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                </p>
+              </article>
+              <article class="blog__article" id="article3">
+                <h4>Самый необходимый набор Gulp плагинов</h4>
+                <time>22 ноября 2017</time>
+                <p>
+                  Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
+                  систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
+                  (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
+                  рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
+                  за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                </p>
+                <p>
+                  Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
+                  систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
+                  (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
+                  рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
+                  за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                </p>
+              </article>
+              <article class="blog__article" id="article4">
+                <h4>Почему я выбрал Pug</h4>
+                <time>22 ноября 2017</time>
+                <p>
+                  Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
+                  систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
+                  (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
+                      рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
+                  за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                </p>
+                <p>
+                  Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании
+                  систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
+                  (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный
+                  рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет
+                  за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                </p>
+              </article>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer__row">
+            <div class="footer__block">
+                    <nav class="nav nav_footer">
+                      <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="./about.html">Обо мне</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./works.html">Мои работы</a></li>
+                        <li class="nav__item nav__item_active"><a class="nav__link" href="./blog.html">Блог</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./index.html">Авторизация</a></li>
+                      </ul>
+                    </nav>
+            </div>
+            <div class="footer__block">  
+                    <ul class="socials socials_footer">
+                      <li class="socials__item"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
+                            <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                          </svg></a></li>
+                      <li class="socials__item"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
+                            <use xlink:href="./assets/img/sprite.svg#github"></use>
+                          </svg></a></li>
+                      <li class="socials__item"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
+                            <use xlink:href="./assets/img/sprite.svg#in"></use>
+                          </svg></a></li>
+                    </ul>
+            </div>
           </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__row">
-          <div class="footer__block">
-                <nav class="nav nav_footer">
-                  <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="./about.html">Обо мне</a></li>
-                    <li class="nav__item"><a class="nav__link" href="./works.html">Мои работы</a></li>
-                    <li class="nav__item nav__item_active"><a class="nav__link" href="./blog.html">Блог</a></li>
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Авторизация</a></li>
-                  </ul>
-                </nav>
+          <div class="footer__row">
+            <div class="footer__block">
+              <div class="footer__text">Я веб-разработчик из Москвы, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+            </div>
+            <div class="footer__block">
+                    <div class="copyright copyright_footer">copyright © Тимур Адольшин | создано с любовью в LoftSchool | 2017</div>
+            </div>
           </div>
-          <div class="footer__block">  
-                <ul class="socials socials_footer">
-                  <li class="socials__item"><a class="socials__link" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="./assets/img/sprite.svg#vk"></use>
-                      </svg></a></li>
-                  <li class="socials__item"><a class="socials__link" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="./assets/img/sprite.svg#github"></use>
-                      </svg></a></li>
-                  <li class="socials__item"><a class="socials__link" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="./assets/img/sprite.svg#in"></use>
-                      </svg></a></li>
-                </ul>
-          </div>
-        </div>
-        <div class="footer__row">
-          <div class="footer__block">
-            <div class="footer__text">Я веб-разработчик из Москвы, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
-          </div>
-          <div class="footer__block">
-                <div class="copyright copyright_footer">copyright © Тимур Адольшин | создано с любовью в LoftSchool | 2017</div>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="./assets/js/blog.js"></script>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="./assets/js/blog.js"></script>
-  </body>
+  </div>
 </html>
