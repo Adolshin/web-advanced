@@ -403,6 +403,7 @@ function image_loaded() {
 
   if (images_loaded_count >= images_total_count) {
     $(window).on('load', function () {
+			$('.wrapper').removeClass('visuallyhidden');
       $('.preloader').delay(1000).fadeOut(1000);
     });
   }

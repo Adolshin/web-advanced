@@ -61,7 +61,8 @@ function image_loaded() {
 
   if (images_loaded_count >= images_total_count) {
     $(window).on('load', function () {
-      $('.preloader').delay(1000).fadeOut(1000);
+      $('.wrapper').removeClass('visuallyhidden');
+      $('.preloader').delay(1000).fadeOut(1000);      
     });
   }
 };
